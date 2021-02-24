@@ -46,7 +46,7 @@ public class HelloWorldRestController {
         if (user == null) {
             System.out.println("User with id " + id + " not found");
             return new ResponseEntity<User>(HttpStatus.NOT_FOUND);
-        }
+        } 
         return new ResponseEntity<User>(user, HttpStatus.OK);
     }
  
